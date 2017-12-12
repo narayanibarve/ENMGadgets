@@ -13,7 +13,7 @@ Gadgets for Ecological Niche Modelling
 install.packages("devtools")
 require(devtools)
 
-install_github("vijaybarve/ENMGadgets")
+install_github("narayanibarve/ENMGadgets")
 require(ENMGadgets)
 ```
 

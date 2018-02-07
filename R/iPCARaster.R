@@ -1,3 +1,4 @@
+
 #' iPCARaster - PCA of Raster files (Interactive)
 #' 
 #' Performs Principle Component Analysis of Raster objects and returns summary 
@@ -42,6 +43,7 @@ iPCARaster <- function(BioStackFiles=NA,LoadingFile=NA,CompImpFile=NA,OPfolder=N
     OPfolder = choose.dir("Output folder to save PCA components : ")
   }  
   BioPt1 = rasterToPoints(BioStack)
+  BioPt1 = BioPt1[complete.cases(BioPt1), ]
   #BioPt1 = rasterToPoints(BioStack)
   print("Generating principal component")
   pcaPt1 = prcomp(na.omit(BioPt1[,3:dim(BioPt1)[2]]), center=TRUE, scale = TRUE)
@@ -51,6 +53,7 @@ iPCARaster <- function(BioStackFiles=NA,LoadingFile=NA,CompImpFile=NA,OPfolder=N
   {
     print(paste("Writing principal component file ", i ), sep = " ")
     tbl1 = cbind(BioPt1[,1:2], pcaScores[,i])
+	
     ### Faster but has error sometimes. The problem lies with rasterFromXYZ function.
     # r2 = rasterFromXYZ(tbl1,digits=5)
     ### till here
@@ -102,3 +105,5 @@ MakeStack <- function(Mfiles)
   }
   return(stk)
 }
+
+

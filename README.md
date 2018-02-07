@@ -23,9 +23,9 @@ Windows users have to first install [Rtools](http://cran.r-project.org/bin/windo
 
 ### Packages `ENMGadgets` depends on
 + [raster] (http://cran.r-project.org/web/packages/raster/)
-+ [maptools] (http://cran.r-project.org/web/packages/raster/)
-+ [sqldf] (http://cran.r-project.org/web/packages/raster/)
-+ [fields] (http://cran.r-project.org/web/packages/raster/)
++ [maptools] (http://cran.r-project.org/web/packages/maptools/)
++ [sqldf] (http://cran.r-project.org/web/packages/sqldf/)
++ [fields] (http://cran.r-project.org/web/packages/fields/)
 + [rgdal] (http://cran.r-project.org/web/packages/rgdal/)
 + [dismo] (http://cran.r-project.org/web/packages/dismo/)
 

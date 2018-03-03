@@ -1,4 +1,4 @@
-#' MOP - This function calculates distance measures between numerous groups of reference set of points (M) in n-dimensional space with each point in another set (G). 
+#' Calculates distance measures between numerous groups of reference set of points (M) in n-dimensional space with each point in another set (G). 
 #' 
 #' Noninteractive version. For interactive version refer \link{iMOP}
 #' 
@@ -11,6 +11,7 @@
 #' Input parameters required for this function are 
 #' @import fields 
 #' @import raster 
+#' @importFrom grDevices dev.new
 #' @param FileType - File types of reference and extent area. 
 #'               A - ASC format files. Parameter m1 and m2 are required, if FileType is set to A 
 #'               M - Files in text format, for files in text format. Parameter InpRefFile and InpExtentFile are required, if FileType is set to M
@@ -255,7 +256,7 @@ MOP_NB <- function(m1, m2, c1, c2, decil, p1, p2, Xcol, Ycol, MxMESS, FlList, Sa
     
     NewM2 = m2[nonzero,c(Xcol,Ycol)]
     
-    windows()
+    dev.new()
     plot(m2[nonzero,Xcol], m2[nonzero, Ycol], pch = 15, col=hsv(clr,1,1), cex = 1, xlab = "Longitude", ylab = "Latitude", main = paste("With ", Percentages[CurDecil], "%") )
     
     ## Get the row no's where environmental values are outside the range in M		
@@ -416,10 +417,3 @@ MakeStack <- function(Mfiles)
   }
   return(stk)
 }
-
-
-
-### ***** Use this command to execute the function. 
-## Op1 = MOP()
-
-

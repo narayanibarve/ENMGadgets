@@ -2,7 +2,7 @@
 % Please edit documentation in R/iPCARaster.R
 \name{iPCARaster}
 \alias{iPCARaster}
-\title{iPCARaster - PCA of Raster files (Interactive)}
+\title{PCA of Raster files (Interactive)}
 \usage{
 iPCARaster(BioStackFiles = NA, LoadingFile = NA, CompImpFile = NA,
   OPfolder = NA)
@@ -38,4 +38,3 @@ like checking for eigen values, broken stick etc.
 pcaop = iPCARaster()
 }
 }
-

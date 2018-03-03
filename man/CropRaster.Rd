@@ -31,4 +31,3 @@ below the note 'For files without extension
 CropRaster()
 }
 }
-

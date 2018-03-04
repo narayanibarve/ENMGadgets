@@ -2,7 +2,7 @@
 % Please edit documentation in R/MOP.R
 \name{MOP}
 \alias{MOP}
-\title{MOP - This function calculates distance measures between numerous groups of reference set of points (M) in n-dimensional space with each point in another set (G).}
+\title{Calculates distance measures between numerous groups of reference set of points (M) in n-dimensional space with each point in another set (G).}
 \usage{
 MOP(FileType = NA, m1 = NA, m2 = NA, InpRefFile = NA,
   InpExtentFile = NA, p1 = NA, p2 = NA, decil = NA, MxMESS = NA,
@@ -75,4 +75,3 @@ Input parameters required for this function are
 MOP()
 }
 }
-

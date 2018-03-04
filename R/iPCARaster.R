@@ -1,5 +1,5 @@
 
-#' iPCARaster - PCA of Raster files (Interactive)
+#' PCA of Raster files (Interactive)
 #' 
 #' Performs Principle Component Analysis of Raster objects and returns summary 
 #' and loadings for the componetns. *Interactive version*. For noninteractive veriosn 
@@ -23,7 +23,7 @@
 #' }
 #' @import raster
 #' @importFrom utils choose.dir choose.files write.table
-#' @importFrom stats prcomp na.omit
+#' @importFrom stats prcomp na.omit complete.cases
 #' @export
 
 
@@ -105,5 +105,3 @@ MakeStack <- function(Mfiles)
   }
   return(stk)
 }
-
-

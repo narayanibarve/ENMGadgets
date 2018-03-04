@@ -21,4 +21,3 @@ DistanceFilter - Raryfy the points in the dataset with threshold distance
 DistanceFilter()
 }
 }
-

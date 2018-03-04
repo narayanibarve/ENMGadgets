@@ -49,4 +49,3 @@ variable contribution. Other subfolders are projection folders with 2 files per 
 BatchMaxent()
 }
 }
-

@@ -1,8 +1,8 @@
 Package: ENMGadgets
 Type: Package
 Title: Tools for Pre and Post Processing in ENM workflow
-Version: 0.0.15
-Date: 2018-02-06
+Version: 0.0.16
+Date: 2018-03-03
 Author: Narayani Barve <narayani.ku@gmail.com>, Vijay Barve
     <vijay.barve@gmail.com>
 Maintainer: Narayani Barve <narayani.ku@gmail.com>
@@ -16,4 +16,4 @@ Imports:
     sqldf,
     rgdal,
     dismo
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1

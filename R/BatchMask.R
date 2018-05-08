@@ -19,7 +19,7 @@
 #' @export
 BatchMask <- function(ASCfilelist=NA, SHPfilelist=NA, OPDirName= NA)
 { 
-  if(is.na(ASCfilelist)){
+  if(is.na(ASCfilelist)) {
     stop("Please specify ASCfilelist (ASCII files to crops) or use 
          iBatchMask for interactive version")
   }
@@ -43,23 +43,22 @@ BatchMask <- function(ASCfilelist=NA, SHPfilelist=NA, OPDirName= NA)
 CropData<-function(filelist, ShapeFile, DirName)
 {
   Shp1 = readShapePoly(ShapeFile)
-  SList = unlist(strsplit(ShapeFile, "\\\\"))
-  ShapeName = SList[length(SList)]
-  ShapeDir = unlist(strsplit(ShapeName, ".shp"))[1]
-  OpDir = paste(DirName, "\\", ShapeDir, sep="")
-  if (file.exists(OpDir) == FALSE)
+  ShapeName = basename(ShapeFile)
+  ShapeDir = gsub(".shp","", ShapeName)
+
+  OpDir = paste(dirname(DirName), basename(DirName), ShapeDir, sep = "/")
+  if (dir.exists(OpDir) == FALSE)
   {
-    dir.create(OpDir)
+    dir.create(OpDir, recursive = TRUE)
   }
   for (i in 1:length(filelist))
   {
     r1 = raster(filelist[i])
     cr1 = crop(r1,Shp1)
     cr2 = mask(cr1,Shp1)
-    RList = unlist(strsplit(filelist[i], "\\\\"))
-    FileName = RList[length(RList)]
+	FileName = basename(filelist[i])
     print(paste("Current ASC file is ", FileName, sep=""))
-    writeRaster(cr2, paste(OpDir, "\\", FileName, sep =""), "ascii")
+	writeRaster(cr2, paste(OpDir, FileName, sep ="/"), "ascii")
     image(cr2,asp=1)
   }
 }

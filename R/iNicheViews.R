@@ -9,7 +9,7 @@
 #' Time required to run the function depends upon the size of component files. 
 #' 
 #' @import raster
-#' @importFrom grDevices dev.copy dev.off hsv jpeg windows
+#' @importFrom grDevices dev.copy dev.off hsv jpeg dev.new
 #' @param OutputSufix - Suffix for the output graph files. (file names will be 
 #' "sample12.jpg" where sample is suffix and component 1 and 2 are plotted in this 
 #' plot)

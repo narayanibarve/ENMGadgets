@@ -21,7 +21,7 @@ a summary of the PCA is returnd as a strcture
 }
 \description{
 Performs Principle Component Analysis of Raster objects and returns summary 
-and loadings for the componetns. For interactive version check \link{iPCARaster}
+and loadings for the componetns.
 }
 \details{
 Main function to generate PCA for the selected bioclimatic layer and then save 

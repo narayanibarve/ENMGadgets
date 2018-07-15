@@ -1,6 +1,6 @@
 #' Calculates distance measures between numerous groups of reference set of points (M) in n-dimensional space with each point in another set (G). 
 #' 
-#' Noninteractive version. For interactive version refer \link{iMOP}
+#' Noninteractive version. 
 #' 
 #' Function MOP also marks areas where extrapolation could occur during niche modeling exercise for careful model interpretation. 
 #' This function is especially useful when developed niche model in projected to different space or time. 
@@ -386,11 +386,11 @@ PlotOut <- function (M1, G1)
 
 ReadASCII <- function(Prompt,Lst1)
 {
-  if (length(Lst1) == 0 )
-  {
-    Mfiles = choose.files(caption=Prompt)
-  } else {Mfiles = Lst1}
-  
+  #if (length(Lst1) == 0 )
+  #{
+  #  Mfiles = choose.files(caption=Prompt)
+  #} else {Mfiles = Lst1}
+  Mfiles = Lst1
   if (length(Mfiles) > 0)
   {
     Mstack = MakeStack(Mfiles)

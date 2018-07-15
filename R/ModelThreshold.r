@@ -1,7 +1,7 @@
 #' ModelThreshold - Thresholds Maxent suitability prediction based on user input. Output of the function is binary map of
 #' predicted suitability as 1 and non suitabile region as 0. 
 #' 
-#' Noninteractive version. For interacteve version refer \link{iModelThreshold}
+#' Noninteractive version. 
 #' 
 #' Function thresholds the suitability predicted by Maxent or by any other niche modeling algorithm, provided that 
 #' predicted file is in .asc format. Function needs 4 parameters, input file, which is prediction file. Occurrence file, 

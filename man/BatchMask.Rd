@@ -14,7 +14,7 @@ BatchMask(ASCfilelist = NA, SHPfilelist = NA, OPDirName = NA)
 \item{OPDirName}{- Output folder, where subfolders of shape files will be created}
 }
 \description{
-Noninteractive version. For interactive version refer \link{iBatchMask}
+Noninteractive version.
 }
 \details{
 Function crops (masks) the raster files with multiple shape file and stores them in separate folders.

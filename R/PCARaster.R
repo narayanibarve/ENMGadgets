@@ -1,7 +1,7 @@
 #' PCARaster - PCA of Raster files
 #' 
 #' Performs Principle Component Analysis of Raster objects and returns summary 
-#' and loadings for the componetns. For interactive version check \link{iPCARaster}
+#' and loadings for the componetns. 
 #' 
 #' Main function to generate PCA for the selected bioclimatic layer and then save 
 #' the pca components in ASCII format.
@@ -18,6 +18,7 @@
 #' pcaop = PCARaster()
 #' }
 #' @import raster
+#' @importFrom stats na.omit prcomp
 #' @export
 
 

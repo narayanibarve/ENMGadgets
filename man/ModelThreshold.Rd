@@ -18,7 +18,7 @@ ModelThreshold(InSuitFile = NA, OccurrenceFile = NA,
 \item{OutSuitFile}{- Output file name. This file will be stored in the current working directory, if no path is given.}
 }
 \description{
-Noninteractive version. For interacteve version refer \link{iModelThreshold}
+Noninteractive version.
 }
 \details{
 Function thresholds the suitability predicted by Maxent or by any other niche modeling algorithm, provided that 

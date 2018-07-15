@@ -1,7 +1,7 @@
 #' CropRaster - Crops (masks) the raster files with the shape file.
 #' 
 #' Function crops (masks) the raster files with the shape file. Noninteractive 
-#' version. For interactive veriosn to be used in scripts check \link{iCropRaster}
+#' version. 
 #' 
 #' Masked files are stored in the current working directory with original name of 
 #' file + the sufix provided.

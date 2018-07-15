@@ -2,7 +2,7 @@
 #' 
 #' Performs PCSRaster and projects it on another set of rasters
 #' 
-#' Noninteractive version. For interactive veriosn to be used in scripts refer \link{iPCAProjection}
+#' Noninteractive version. 
 #' 
 #' @param BioStackFiles - ESRI ASCII grid files of predictor variables
 #' @param LoadingFile - name of output file which stores loadings for components
@@ -16,6 +16,7 @@
 #' pcaop = PCAProjection()
 #' }
 #' @import raster
+#' @importFrom stats na.omit prcomp
 #' @export
 
 PCAProjection <- function(BioStackFiles=NA,LoadingFile=NA,

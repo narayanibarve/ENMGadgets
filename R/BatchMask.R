@@ -1,6 +1,6 @@
 #' BatchMask - Crops (masks) the raster files with multiple shape file.
 #' 
-#' Noninteractive version. For interactive version refer \link{iBatchMask}
+#' Noninteractive version. 
 #' 
 #' Function crops (masks) the raster files with multiple shape file and stores them in separate folders.
 #' Masked files are stored in seperate folders with shape file name and names of the masked files are kept same. 

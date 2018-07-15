@@ -20,7 +20,7 @@ BatchMaxent(projpath = NA, InpFlName = NA, MNameSameAsSpecies = FALSE,
 \description{
 Function BatchMaxent executes Maxent algorithm using dismo and it gives the flexibility of projecting the model to multiple projection
 areas. This process is done iteratively if the species list contains more than on species. To run this function successfully specific
-directory structure should be maintained. For interactive version check \link{iBatchMaxent}
+directory structure should be maintained.
 }
 \details{
 In the projpath parameter, specify the path where the data is residing. MNameSameAsSpecies parameter is also required. This parameter

@@ -1,6 +1,6 @@
 #' PartialROC - A function to evaluate output of presence only nich models on continuous model outputs.
 #' 
-#' Noninteractive version. For interactive version refer \link{iPartialROC}
+#' Noninteractive version. 
 #' 
 #' Function PartialROC generates the area under the curve values using bootstrap method. PartialROC is a model evaluation tool, used for
 #' continuous model outputs as compared to binary model outputs. This method is specially used for model trained using presence only data.

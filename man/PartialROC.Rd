@@ -21,7 +21,7 @@ PartialROC(PresenceFile = NA, PredictionFile = NA, OmissionVal = NA,
 \item{OutputFile}{- Name of output file. If you specify the path, it will store it there otherwise it will save it in current working directory.}
 }
 \description{
-Noninteractive version. For interactive version refer \link{iPartialROC}
+Noninteractive version.
 }
 \details{
 Function PartialROC generates the area under the curve values using bootstrap method. PartialROC is a model evaluation tool, used for

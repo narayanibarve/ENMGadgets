@@ -59,7 +59,7 @@ future use.}
 \item{MxMESSOpFile}{- If MxMESS is set to Y, and want to save maxent MESS results in a file, then provide file name with folder in this parameter.}
 }
 \description{
-Noninteractive version. For interactive version refer \link{iMOP}
+Noninteractive version.
 }
 \details{
 Function MOP also marks areas where extrapolation could occur during niche modeling exercise for careful model interpretation. 

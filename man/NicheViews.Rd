@@ -23,7 +23,7 @@ overlaid with occurrence data. Graphs are stored in jpg files. This
 function also generates bar plots of each component, occurence of that components.
 }
 \details{
-Nininteractive version. For interactive veriosn to be used in scripts refer \link{iNicheViews}
+Nininteractive version.
 
 Time required to run the function depends upon the size of component files.
 }

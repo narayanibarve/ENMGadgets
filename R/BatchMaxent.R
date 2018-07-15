@@ -3,7 +3,7 @@
 #' 
 #' Function BatchMaxent executes Maxent algorithm using dismo and it gives the flexibility of projecting the model to multiple projection
 #' areas. This process is done iteratively if the species list contains more than on species. To run this function successfully specific
-#' directory structure should be maintained. For interactive version check \link{iBatchMaxent}
+#' directory structure should be maintained. 
 #'
 #' In the projpath parameter, specify the path where the data is residing. MNameSameAsSpecies parameter is also required. This parameter
 #' is set to TRUE when M_folderName in the Calibration folder is same as species name. And is set to FALSE when M_folderName is different than
@@ -34,7 +34,7 @@
 #' @examples \dontrun{
 #' BatchMaxent()
 #' }
-#' @importFrom utils read.csv read.table
+#' @importFrom utils read.csv read.table write.table
 #' @importFrom stats sd
 #' @export
 

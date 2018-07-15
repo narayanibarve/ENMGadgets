@@ -27,7 +27,7 @@ a summary of the PCA is returnd as a strcture
 Performs PCSRaster and projects it on another set of rasters
 }
 \details{
-Noninteractive version. For interactive veriosn to be used in scripts refer \link{iPCAProjection}
+Noninteractive version.
 }
 \examples{
 \dontrun{

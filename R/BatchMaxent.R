@@ -7,7 +7,7 @@
 #'
 #' In the projpath parameter, specify the path where the data is residing. MNameSameAsSpecies parameter is also required. This parameter
 #' is set to TRUE when M_folderName in the Calibration folder is same as species name. And is set to FALSE when M_folderName is different than
-#' species name. This scenerio exists, when a single M_folderName can be used for multiple species for calibration. This in this case, specify
+#' species name. This scenario exists, when a single M_folderName can be used for multiple species for calibration. This in this case, specify
 #' M_folderName in species list file. arglist parameter is a list of arguments to be passed to Maxent. See documentation of Maxent for more details.
 #'
 #' See the description below for projpath directory structure. 
@@ -18,7 +18,7 @@
 #' for model calibration. If M_folderName is same as SpeciesName, then set the parameter MNameSameAsSpecies to TRUE. In that case M_folderName
 #' column in species list file can be ignored. The structure of the directory should be as given below.
 #' 1) Calibration - This folder should contain subfolders with name as specified in M_folder name in the species list file. These subfolders
-#' must contain the background environmental data. 2)Occurrences - This folder should contain occurrence data for each species in seperate file
+#' must contain the background environmental data. 2)Occurrences - This folder should contain occurrence data for each species in separate file
 #' with species name as mentioned in species list file. 3) Projections - This folder should contain the background environmental data for projections
 #' and data should be stored in subfolders, so if one has to project it only to one area, still data should go in subfolder. Name of the subfolder
 #' can be user choice.
@@ -30,7 +30,7 @@
 #' @param projpath - Project path where all the required files for model calibrations are stored. e.g. "c:/SpDist/Model"
 #' @param InpFlName - Name of the input file containing SpeciesName (OccurrenceFileName), M_folderName
 #' @param MNameSameAsSpecies - Logical variable, to designate, if the M_folderName is same as OccurrenceFileName or not.  
-#' @param arglist - List of arguments to be passed to maxent for model fitting and prediction.  
+#' @param arglist - List of arguments to be passed to Maxent for model fitting and prediction.  
 #' @examples \dontrun{
 #' BatchMaxent()
 #' }

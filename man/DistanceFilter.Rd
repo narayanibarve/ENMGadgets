@@ -2,7 +2,7 @@
 % Please edit documentation in R/DistanceFilter.R
 \name{DistanceFilter}
 \alias{DistanceFilter}
-\title{DistanceFilter - Raryfy the points in the dataset with threshold distance}
+\title{DistanceFilter - Rarefy the points in the dataset with threshold distance}
 \usage{
 DistanceFilter(input = NA, threshold = 1, output = NA)
 }
@@ -14,7 +14,7 @@ DistanceFilter(input = NA, threshold = 1, output = NA)
 \item{output}{- name of the output file}
 }
 \description{
-DistanceFilter - Raryfy the points in the dataset with threshold distance
+DistanceFilter - Rarefy the points in the dataset with threshold distance
 }
 \examples{
 \dontrun{

@@ -11,7 +11,7 @@ CropRaster(filelist = NA, ShapeFile = NA, sufix = NA)
 
 \item{ShapeFile}{- mask shapefile used to crop rasters}
 
-\item{sufix}{- sufix for the output file name}
+\item{sufix}{- suffix for the output file name}
 }
 \description{
 Function crops (masks) the raster files with the shape file. Noninteractive 
@@ -19,7 +19,7 @@ version.
 }
 \details{
 Masked files are stored in the current working directory with original name of 
-file + the sufix provided.
+file + the suffix provided.
 For example, if the input asc files are bio1.asc, bio2.asc, and you give the 
 suffix as 'n', then the output masked files are bio1n.asc, bio2n.asc
 If by chance your files do not have any extension, then comment the statement 

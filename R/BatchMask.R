@@ -3,7 +3,7 @@
 #' Noninteractive version. 
 #' 
 #' Function crops (masks) the raster files with multiple shape file and stores them in separate folders.
-#' Masked files are stored in seperate folders with shape file name and names of the masked files are kept same. 
+#' Masked files are stored in separate folders with shape file name and names of the masked files are kept same. 
 #' For example, if the input asc files are bio1.asc, bio2.asc, and you select multiple shape files like shp1.shp, shp2.shp, shp3.shp, then 
 #' 3 folders named shp1, shp2 and shp3 will be created in output folder specified by user. Each folder will contain bio1.asc, bio2.asc
 #' If by chance your files does not have any extension, then comment the statement below the note 'For file with extension'. 

@@ -20,7 +20,7 @@ Longitude, Latitude" fields with headers.}
 \description{
 Function to generate bivariate graphs of all combinations of PCA components, 
 overlaid with occurrence data. Graphs are stored in jpg files. This 
-function also generates bar plots of each component, occurence of that components.
+function also generates bar plots of each component, occurrence of that components.
 }
 \details{
 Nininteractive version.

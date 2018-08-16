@@ -1,4 +1,4 @@
-#' DistanceFilter - Raryfy the points in the dataset with threshold distance
+#' DistanceFilter - Rarefy the points in the dataset with threshold distance
 #' 
 #' @param input - input file name containing species name, Latitude and Longitude
 #' @param threshold - value of threshold in (decimal) degrees

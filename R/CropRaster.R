@@ -4,7 +4,7 @@
 #' version. 
 #' 
 #' Masked files are stored in the current working directory with original name of 
-#' file + the sufix provided.
+#' file + the suffix provided.
 #' For example, if the input asc files are bio1.asc, bio2.asc, and you give the 
 #' suffix as 'n', then the output masked files are bio1n.asc, bio2n.asc
 #' If by chance your files do not have any extension, then comment the statement 
@@ -15,7 +15,7 @@
 #' @import maptools
 #' @param filelist - list of raster files to crop
 #' @param ShapeFile - mask shapefile used to crop rasters 
-#' @param sufix - sufix for the output file name
+#' @param sufix - suffix for the output file name
 #' @examples \dontrun{
 #' CropRaster()
 #' }

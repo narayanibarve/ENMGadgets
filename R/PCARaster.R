@@ -7,13 +7,13 @@
 #' the pca components in ASCII format.
 #' This function will accept the bioclimatic ASCII files. PCApca components are 
 #' stored as Comp1.asc, Comp2.asc...... and so on. 
-#' This function retuns the pca of the ascii data supplied to do further processing like checking for eigen values, broken stick etc. 
+#' This function returns the pca of the ascii data supplied to do further processing like checking for eigen values, broken stick etc. 
 #' 
 #' @param BioStackFiles - ESRI ASCII grid files of predictor variables
 #' @param LoadingFile - name of output file which stores loadings for components
 #' @param CompImpFile - name of output file of the PCA summaries
 #' @param OPfolder - name of output folder to save PCA component, loading and summary file
-#' @return a summary of the PCA is returnd as a strcture
+#' @return a summary of the PCA is returned as a structure
 #' @examples \dontrun{
 #' pcaop = PCARaster()
 #' }

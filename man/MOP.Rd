@@ -17,7 +17,7 @@ The format of the file should be Longitude, Latitude, Var1, Var2,...... and so o
 file in text format has same sequence of variables.}
 
 \item{m1}{- List of .asc file for reference area (M). For example, ("C://data//Bio1_M.asc", "C://data//Bio2_M.asc","C://data//Bio3_M.asc")
-Supply this list, when FileType parameter is set to A. Make sure that order of variables is same in reference and exent.}
+Supply this list, when FileType parameter is set to A. Make sure that order of variables is same in reference and extent.}
 
 \item{m2}{- List of .asc file for extent area (G). For example, ("C://data//Bio1_G.asc", "C://data//Bio2_G.asc","C://data//Bio3_G.asc"). 
 Supply this list, when FileType parameter is set to A. Make sure that order of variables is same in reference and exent}
@@ -34,11 +34,11 @@ Value must be between (>0 and <=1).}
 \item{p2}{- Subsampling percentage for Extent area (G) (proportion of points from G to be randomly sampled if G is too large). 
 Value must be between (>0 and <=1).}
 
-\item{decil}{- Series of number seperated by comma, which signifies what proportion of closest points in M is to be compared.}
+\item{decil}{- Series of number separated by comma, which signifies what proportion of closest points in M is to be compared.}
 
 \item{MxMESS}{- A boolean variable for generating Maxent MESS, if MxMESS = Y, generate Maxent MESS , if MxMESS = N do not generate Maxent MESS}
 
-\item{GetAns}{- Option is Y or N. If Y, the provide file name to save reference data and extent data seperately. This parameter is necessary, 
+\item{GetAns}{- Option is Y or N. If Y, the provide file name to save reference data and extent data separately. This parameter is necessary, 
 if the FileType parameter is set to A.}
 
 \item{OPRefFileName}{- Name of file in which reference data (M) will be saved in .txt format for future use. Supply this parameter when
@@ -56,7 +56,7 @@ future use.}
 \item{SampleGName}{- Provide file name with folder names. If the reference area is too big and p1 is less than 1, then choice is to save this resampled data in the file for 
 future use.}
 
-\item{MxMESSOpFile}{- If MxMESS is set to Y, and want to save maxent MESS results in a file, then provide file name with folder in this parameter.}
+\item{MxMESSOpFile}{- If MxMESS is set to Y, and want to save Maxent MESS results in a file, then provide file name with folder in this parameter.}
 }
 \description{
 Noninteractive version.

@@ -21,7 +21,7 @@ lists for multiple projections}
 the projection(s)}
 }
 \value{
-a summary of the PCA is returnd as a strcture
+a summary of the PCA is returned as a structure
 }
 \description{
 Performs PCSRaster and projects it on another set of rasters

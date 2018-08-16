@@ -17,7 +17,7 @@ PCARaster(BioStackFiles = NA, LoadingFile = NA, CompImpFile = NA,
 \item{OPfolder}{- name of output folder to save PCA component, loading and summary file}
 }
 \value{
-a summary of the PCA is returnd as a strcture
+a summary of the PCA is returned as a structure
 }
 \description{
 Performs Principle Component Analysis of Raster objects and returns summary 
@@ -28,7 +28,7 @@ Main function to generate PCA for the selected bioclimatic layer and then save
 the pca components in ASCII format.
 This function will accept the bioclimatic ASCII files. PCApca components are 
 stored as Comp1.asc, Comp2.asc...... and so on. 
-This function retuns the pca of the ascii data supplied to do further processing like checking for eigen values, broken stick etc.
+This function returns the pca of the ascii data supplied to do further processing like checking for eigen values, broken stick etc.
 }
 \examples{
 \dontrun{

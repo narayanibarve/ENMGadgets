@@ -18,7 +18,7 @@
 #'               The format of the file should be Longitude, Latitude, Var1, Var2,...... and so on. Also make sure that reference and extent 
 #'               file in text format has same sequence of variables. 
 #' @param m1 - List of .asc file for reference area (M). For example, ("C://data//Bio1_M.asc", "C://data//Bio2_M.asc","C://data//Bio3_M.asc")
-#'         Supply this list, when FileType parameter is set to A. Make sure that order of variables is same in reference and exent.
+#'         Supply this list, when FileType parameter is set to A. Make sure that order of variables is same in reference and extent.
 #' @param m2 - List of .asc file for extent area (G). For example, ("C://data//Bio1_G.asc", "C://data//Bio2_G.asc","C://data//Bio3_G.asc"). 
 #'         Supply this list, when FileType parameter is set to A. Make sure that order of variables is same in reference and exent
 #' @param InpRefFile - Name of file containing reference data (M) for distance calculation. Format of the file should be 
@@ -29,9 +29,9 @@
 #'         Value must be between (>0 and <=1).
 #' @param p2 - Subsampling percentage for Extent area (G) (proportion of points from G to be randomly sampled if G is too large). 
 #'         Value must be between (>0 and <=1).
-#' @param decil - Series of number seperated by comma, which signifies what proportion of closest points in M is to be compared. 
+#' @param decil - Series of number separated by comma, which signifies what proportion of closest points in M is to be compared. 
 #' @param MxMESS - A boolean variable for generating Maxent MESS, if MxMESS = Y, generate Maxent MESS , if MxMESS = N do not generate Maxent MESS
-#' @param GetAns - Option is Y or N. If Y, the provide file name to save reference data and extent data seperately. This parameter is necessary, 
+#' @param GetAns - Option is Y or N. If Y, the provide file name to save reference data and extent data separately. This parameter is necessary, 
 #'         if the FileType parameter is set to A.
 #' @param OPRefFileName - Name of file in which reference data (M) will be saved in .txt format for future use. Supply this parameter when
 #'         GetAns = Y and FileType = A 
@@ -43,7 +43,7 @@
 #'         future use. 
 #' @param SampleGName - Provide file name with folder names. If the reference area is too big and p1 is less than 1, then choice is to save this resampled data in the file for 
 #'         future use. 
-#' @param MxMESSOpFile - If MxMESS is set to Y, and want to save maxent MESS results in a file, then provide file name with folder in this parameter.
+#' @param MxMESSOpFile - If MxMESS is set to Y, and want to save Maxent MESS results in a file, then provide file name with folder in this parameter.
 #' @examples \dontrun{
 #' MOP()
 #' }

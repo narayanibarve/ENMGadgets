@@ -11,7 +11,7 @@
 #' lists for multiple projections
 #' @param OutputFolder - Output folder or list of output folder names for storing 
 #' the projection(s)
-#' @return a summary of the PCA is returnd as a strcture
+#' @return a summary of the PCA is returned as a structure
 #' @examples \dontrun{
 #' pcaop = PCAProjection()
 #' }

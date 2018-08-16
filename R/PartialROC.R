@@ -1,4 +1,4 @@
-#' PartialROC - A function to evaluate output of presence only nich models on continuous model outputs.
+#' PartialROC - A function to evaluate output of presence only niche models on continuous model outputs.
 #' 
 #' Noninteractive version. 
 #' 
@@ -14,11 +14,11 @@
 #'    5. NoOfIteration - Number of iteration for bootstrapping
 #'    6. OutputFile - Name of output file. If you specify the path, it will store it there otherwise it will save it in current working
 #'                    directory. 
-#' OutputFile will have 4 columns, IterationNo, AUC_at_specified_value, AUC_AT_Random, AUC_Ratio. The first row will always have 0 th interation
+#' OutputFile will have 4 columns, IterationNo, AUC_at_specified_value, AUC_AT_Random, AUC_Ratio. The first row will always have 0 th iteration
 #' which is the actual Area Under the Curve without bootstrapping. And the rest of the rows contains auc ratio for all the bootstrap.
 #' @import raster
 #' @import sqldf
-#' @param PresenceFile - occurence point file (test data)
+#' @param PresenceFile - occurrence point file (test data)
 #' @param PredictionFile - model prediction in .asc format 
 #' @param OmissionVal - Amount of error admissible along the Y-axis, given the requirements and conditions of the study. Value should range between 0 - 1 
 #' @param RandomPercent - Occurrence points to be sampled randomly from the test data for bootstrapping. 

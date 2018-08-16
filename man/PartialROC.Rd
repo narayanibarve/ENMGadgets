@@ -2,13 +2,13 @@
 % Please edit documentation in R/PartialROC.R
 \name{PartialROC}
 \alias{PartialROC}
-\title{PartialROC - A function to evaluate output of presence only nich models on continuous model outputs.}
+\title{PartialROC - A function to evaluate output of presence only niche models on continuous model outputs.}
 \usage{
 PartialROC(PresenceFile = NA, PredictionFile = NA, OmissionVal = NA,
   RandomPercent = NA, NoOfIteration = NA, OutputFile = NA)
 }
 \arguments{
-\item{PresenceFile}{- occurence point file (test data)}
+\item{PresenceFile}{- occurrence point file (test data)}
 
 \item{PredictionFile}{- model prediction in .asc format}
 
@@ -36,7 +36,7 @@ Input parameters required for this function are
    5. NoOfIteration - Number of iteration for bootstrapping
    6. OutputFile - Name of output file. If you specify the path, it will store it there otherwise it will save it in current working
                    directory. 
-OutputFile will have 4 columns, IterationNo, AUC_at_specified_value, AUC_AT_Random, AUC_Ratio. The first row will always have 0 th interation
+OutputFile will have 4 columns, IterationNo, AUC_at_specified_value, AUC_AT_Random, AUC_Ratio. The first row will always have 0 th iteration
 which is the actual Area Under the Curve without bootstrapping. And the rest of the rows contains auc ratio for all the bootstrap.
 }
 \examples{

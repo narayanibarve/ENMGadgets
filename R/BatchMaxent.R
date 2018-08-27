@@ -43,7 +43,8 @@ BatchMaxent <- function(projpath=NA, InpFlName=NA, MNameSameAsSpecies=FALSE, arg
 {
     Valid = TRUE
     if (is.na(projpath)){
-      stop("Please specify projpath (the project path) or use iBatchMaxent for interactive version")
+      #projpath = tempdir()
+      stop("Please specify projpath (the project path)")
     }
 	
 	if (!file.exists(projpath))
@@ -65,7 +66,7 @@ BatchMaxent <- function(projpath=NA, InpFlName=NA, MNameSameAsSpecies=FALSE, arg
 	if (is.na(InpFlName) & (MNameSameAsSpecies == FALSE) )
 	{ 
 	  stop("Please specify InpFlName (file name with path for calibration area and 
-	       species connection) or use iBatchMaxent for interactive version")
+	       species connection)")
 	}
 
 ## if the file name is supplied and Speccies name and M folder name is not same. 	

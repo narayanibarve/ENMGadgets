@@ -20,16 +20,15 @@
 BatchMask <- function(ASCfilelist=NA, SHPfilelist=NA, OPDirName= NA)
 { 
   if(is.na(ASCfilelist)) {
-    stop("Please specify ASCfilelist (ASCII files to crops) or use 
-         iBatchMask for interactive version")
+    stop("Please specify ASCfilelist (ASCII files to crops)")
   }
   if(is.na(SHPfilelist)){
-    stop("Please specify HPfilelist (shape files as crop mask) or use 
-         iBatchMask for interactive version")
+    stop("Please specify HPfilelist (shape files as crop mask)")
   }
   if (is.na(OPDirName)) {
-    stop("Please specify OPDirName (output folder) or use 
-         iBatchMask for interactive version")
+    OPDirName = tempdir()
+    print(paste("Output is stored in", tempdir(), sep = " "))
+    #stop("Please specify OPDirName (output folder))
   }
   d1 = length(SHPfilelist)
   for (k in 1:d1)

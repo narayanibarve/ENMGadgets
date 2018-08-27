@@ -38,22 +38,22 @@ PartialROC <- function(PresenceFile=NA, PredictionFile=NA, OmissionVal=NA,
    ## Generate a matrix with point id in presence and suitablility value for that point
    ## Matrix format, PointID, Long, Lat, SuitVal
    if(is.na(PresenceFile)){
-     stop("Please specify PresenceFile (occurrence table) or use iPartialROC for interactive version")
+     stop("Please specify PresenceFile (occurrence table)")
    }
    if(is.na(PredictionFile)){
-     stop("Please specify PredictionFile (Model Prediction) or use iPartialROC for interactive version")
+     stop("Please specify PredictionFile (Model Prediction)")
    } 
    if(is.na(OmissionVal)){
-     stop("Please specify OmissionVal (value between 0 to 1 [1 - omission)]) or use iPartialROC for interactive version")
+     stop("Please specify OmissionVal (value between 0 to 1 [1 - omission)])")
    }
    if(is.na(RandomPercent)){
-     stop("Please specify RandomPercent (Percentage of random points to draw [1-100]) or use iPartialROC for interactive version")
+     stop("Please specify RandomPercent (Percentage of random points to draw [1-100])")
    }
    if(is.na(NoOfIteration)){
-     stop("Please specify NoOfIteration (Number of iteration for bootstrapping) or use iPartialROC for interactive version")
+     stop("Please specify NoOfIteration (Number of iteration for bootstrapping)")
    }
    if(is.na(OutputFile)){
-     stop("Please specify OutputFile (output file name) or use iPartialROC for interactive version")
+     stop("Please specify OutputFile (output file name)")
      OutputFile = readline("Enter output file name : ")
    }    
       

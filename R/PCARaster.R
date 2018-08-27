@@ -25,21 +25,17 @@
 PCARaster <- function(BioStackFiles=NA,LoadingFile=NA,CompImpFile=NA,OPfolder=NA)
 {
   if(is.na(BioStackFiles)){
-    stop("Please specify BioStackFiles (bioclimatic ASCII files) or use 
-         iPCARaster for interactive version")
+    stop("Please specify BioStackFiles (bioclimatic ASCII files)")
   }
   BioStack = MakeStack(BioStackFiles)
   if(is.na(LoadingFile)){
-    stop("Please specify LoadingFile (PCA loading) or use iPCARaster for 
-         interactive version")
+    stop("Please specify LoadingFile (PCA loading)")
   }
   if(is.na(CompImpFile)){
-    stop("Please specify CompImpFile (PCA summary) or use iPCARaster for 
-         interactive version")
+    stop("Please specify CompImpFile (PCA summary)")
   }
   if(is.na(OPfolder)){
-    stop("Please specify OPfolder (Output folder to save PCA components) or use 
-         iPCARaster for interactive version")
+    stop("Please specify OPfolder (Output folder to save PCA components)")
   }  
   BioPt1 = rasterToPoints(BioStack)
   #BioPt1 = rasterToPoints(BioStack)

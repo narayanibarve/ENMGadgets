@@ -24,20 +24,16 @@
 ModelThreshold <- function(InSuitFile=NA, OccurrenceFile=NA, PercentThreshold=NA, OutSuitFile=NA)
 {
   if(is.na(InSuitFile)){
-    stop("Please specify InSuitFile (Input raster) or use 
-         iModelThreshold for interactive version")
+    stop("Please specify InSuitFile (Input raster)")
   }    
   if(is.na(OccurrenceFile)){
-    stop("Please specify OccurrenceFile (occurrence table) or use 
-         iModelThreshold for interactive version")
+    stop("Please specify OccurrenceFile (occurrence table)")
   }
   if(is.na(PercentThreshold)){
-    stop("Please specify PercentThreshold (threshold between 0 to 1) or use 
-         iModelThreshold for interactive version")
+    stop("Please specify PercentThreshold (threshold between 0 to 1)")
   } 
   if(is.na(OutSuitFile)){
-    stop("Please specify OutSuitFile (output file name) or use 
-         iModelThreshold for interactive version")
+    stop("Please specify OutSuitFile (output file name)")
   }   
   InRast = raster(InSuitFile)
 	plot(InRast)

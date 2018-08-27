@@ -63,12 +63,11 @@ MOP <- function(FileType=NA, m1=NA, m2=NA, InpRefFile=NA, InpExtentFile=NA,
   ## If the data is in ASCII format, then ASCII file names should be same for extent and reference dataset. While selecting the files make sure that files are selected
   ## in sequence. (Reason, Raster package is not able to understand the file names, but it converts them to layer_1 layer_2......
   if(is.na(FileType)){
-    stop("Please specify FileType (ASCII format files or Matrix in text format A/M) or use 
-         iMOP for interactive version")
-  }
+    stop("Please specify FileType (ASCII format files or Matrix in text format A/M)")
+    }
   switch(FileType,
          A = { if (is.na(m1[1])){
-           stop("Please specify m1 (Reference Files) or use iMOP for interactive version")
+           stop("Please specify m1 (Reference Files)")
            if (length(m1) == 0 )
            {
              Valid = FALSE
@@ -77,7 +76,7 @@ MOP <- function(FileType=NA, m1=NA, m2=NA, InpRefFile=NA, InpExtentFile=NA,
            else {m1 = ReadASCII ("Choose Reference Files",m1)}
            
            if (is.na(m2[1])){
-             stop("Please specify m2 (Reference Files) or use iMOP for interactive version")
+             stop("Please specify m2 (Reference Files)")
              if (length(m2) == 0 )
              {
                Valid = FALSE

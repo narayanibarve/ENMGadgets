@@ -23,16 +23,13 @@
 CropRaster<-function(filelist=NA,ShapeFile=NA,sufix=NA)
 {
   if(is.na(filelist)){
-    stop("Please specify filelist (ASCII files to crop) or use 
-         iCropRasterr for interactive version")
+    stop("Please specify filelist (ASCII files to crop)")
   }
   if(is.na(ShapeFile)){
-    stop("Please specify ShapeFile (shape file as crop mask) or use 
-         iCropRasterr for interactive version")
+    stop("Please specify ShapeFile (shape file as crop mask)")
   }
   if(is.na(sufix)){
-    stop("Please specify sufix (sufix for the output file name) or use 
-         iCropRasterr for interactive version")
+    stop("Please specify sufix (sufix for the output file name)")
   }
   ext1 = sufix
   Shp1 = readShapePoly(ShapeFile)

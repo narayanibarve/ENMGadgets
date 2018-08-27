@@ -24,18 +24,15 @@ PCAProjection <- function(BioStackFiles=NA,LoadingFile=NA,
                           OutputFolder=NA)
 {
   if(is.na(BioStackFiles[1])){
-    stop("Please specify BioStackFiles (bioclimatic ASCII files) or use 
-         iPCAProjection for interactive version")
+    stop("Please specify BioStackFiles (bioclimatic ASCII files)")
   }
   print(BioStackFiles)
   BioStack = MakeStack(BioStackFiles)
   if(is.na(LoadingFile)){
-    stop("Please specify LoadingFile (PCA loading) or use iPCAProjection for 
-         interactive version")
+    stop("Please specify LoadingFile (PCA loading)")
   }
   if(is.na(CompImpFile)){
-    stop("Please specify CompImpFile (PCA summary) or use iPCAProjection for 
-         interactive version")
+    stop("Please specify CompImpFile (PCA summary)")
   }  
   BioPt1 = rasterToPoints(BioStack)
   print("Generating principal component")

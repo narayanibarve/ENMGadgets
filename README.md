@@ -32,19 +32,19 @@ require(ENMGadgets)
 #### PCARaster
 
 ```r
-pcaop = iPCARaster()
+pcaop = PCARaster()
 ```
 
 #### PCAProjection
 
 ```r
-pcaop = iPCAProjection()
+pcaop = PCAProjection()
 ```
 
 #### CropRaster
 
 ```r
-iCropRaster()
+CropRaster()
 ```
 
 #### DistanceFilter
@@ -54,30 +54,30 @@ DistanceFilter()
 
 #### NicheViews
 ```r
-iNicheViews()
+NicheViews()
 ```
 
 #### BatchMask
 ```r
-iBatchMask()
+BatchMask()
 ```
 
 #### ModelThreshold
 ```r
-iModelThreshold()
+ModelThreshold()
 ```
 
 #### PartialROC
 ```r
-iPartialROC()
+PartialROC()
 ```
 
 #### MOP
 ```r
-iMOP()
+MOP()
 ```
 
 #### BatchMaxent
 ```r
-iBatchMaxent()
+BatchMaxent()
 ```

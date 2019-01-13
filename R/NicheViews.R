@@ -24,18 +24,15 @@
 NicheViews <- function(OutputSufix=NA,RasterFileList=NA,DataFileName=NA)
 {
   if(is.na(OutputSufix)){
-    stop("Please specify OutputSufix (Suffix for output graph files) or use 
-         iNicheViews for interactive version")
+    stop("Please specify OutputSufix (Suffix for output graph files)")
   }
   if(is.na(RasterFileList)){
-    stop("Please specify RasterFileList (Select ASCII files to crop) or use 
-         iNicheViews for interactive version")
+    stop("Please specify RasterFileList (Select ASCII files to crop)")
   }
   st1 = MakeStack(RasterFileList)
   cat("Stacks created\n")
   if(is.na(DataFileName)){ 
-    stop("Please specify DataFileName (occurrence points) or use 
-         iNicheViews for interactive version")
+    stop("Please specify DataFileName (occurrence points)")
   }
   bpt1 = rasterToPoints(st1)
   cat("Points generated\n")

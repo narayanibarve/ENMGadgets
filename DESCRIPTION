@@ -1,7 +1,7 @@
 Package: ENMGadgets
 Type: Package
-Title: Tools for Pre and Post Processing in ENM Workflow
-Version: 0.1.0
+Title: Pre and Post Processing in ENM Workflow
+Version: 0.1.0.1
 Date: 2018-08-16
 Author: Narayani Barve <narayani.ku@gmail.com>, Vijay Barve
     <vijay.barve@gmail.com>
